@@ -985,7 +985,7 @@ namespace User {
 console.log(User.name)   // 张三
 console.log(User.Description.Hobby) // ['篮球']
 
-namespace Member{
+namespace Member {
     export let name: string = '李四'
 }
 console.log(Member.name) // 李四
@@ -998,8 +998,9 @@ console.log(Member.name) // 李四
 // console.log(NPerson.name)
 // console.log(NPerson.getName())
 
-
-/* {
+log('练习三十七')
+// 练习三十七：补充-函数重载
+{
     interface Person {
         eat(): void
         eat(food: string): string
@@ -1019,7 +1020,7 @@ console.log(Member.name) // 李四
         eat(food: string): string
         eat(food: string, coff: string): string
         eat(food?: any, coff?: any): string | void {
-            throw new Error("Method not implemented.")
+            // 函数重载实现：根据参数类型执行不同的函数
         }
         work(): void {
             console.log('男人必须要买房，买车')
@@ -1028,4 +1029,4 @@ console.log(Member.name) // 李四
 
     new User('张三').eat('苹果')
     new User('李四').eat()
-} */
+}
