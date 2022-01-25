@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="layout-calculator">
+        <!-- 显示区域 -->
+        <div class="layout-calculator--top">
+            <span id="detail" class="show-detail"></span>
+            <span id="result" class="show-result">0</span>
+        </div>
+        <!-- 操作区域 -->
+        <div class="layout-calculator--bottom">
+            <ul id="operate">
+                <li class="btn-operate btn-warn" value="" ctype="0">C</li>
+                <li class="btn-operate" value="(" ctype="-1">(</li>
+                <li class="btn-operate" value=")" ctype="-1">)</li>
+                <li class="btn-operate" value="log" ctype="1">log</li>
+                <li class="btn-operate" value="S" ctype="8">S<sub>圆</sub></li>
+                <li class="btn-operate" value="C" ctype="8">C<sub>圆</sub></li>
+                <li class="btn-operate" value="s" ctype="2">x<sup>2</sup></li>
+                <li class="btn-operate" value="v" ctype="2">x<sup>3</sup></li>
+                <li class="btn-operate btn-symbol" value="√" ctype="5">√</li>
+                <li class="btn-operate btn-symbol" value="%" ctype="-1">%</li>
+                <li class="btn-operate btn-symbol" value="" ctype="3">+/-</li>
+                <li class="btn-operate btn-symbol" value="+" ctype="-1">+</li>
+                <li class="btn-operate" value="!" ctype="4">x!</li>
+                <li class="btn-operate" value="π" ctype="7">π</li>
+                <li class="btn-operate btn-num" value="9" ctype="-1">9</li>
+                <li class="btn-operate btn-num" value="8" ctype="-1">8</li>
+                <li class="btn-operate btn-num" value="7" ctype="-1">7</li>
+                <li class="btn-operate btn-symbol" value="-" ctype="-1">-</li>
+                <li class="btn-operate" value="sin" ctype="1">sin</li>
+                <li class="btn-operate" value="sinh" ctype="1">sinh</li>
+                <li class="btn-operate btn-num" value="6" ctype="-1">6</li>
+                <li class="btn-operate btn-num" value="5" ctype="-1">5</li>
+                <li class="btn-operate btn-num" value="4" ctype="-1">4</li>
+                <li class="btn-operate btn-symbol" value="*" ctype="-1">*</li>
+                <li class="btn-operate" value="cos" ctype="1">cos</li>
+                <li class="btn-operate" value="cosh" ctype="1">cosh</li>
+                <li class="btn-operate btn-num" value="3" ctype="-1">3</li>
+                <li class="btn-operate btn-num" value="2" ctype="-1">2</li>
+                <li class="btn-operate btn-num" value="1" ctype="-1">1</li>
+                <li class="btn-operate btn-symbol" value="÷" ctype="6">÷</li>
+                <li class="btn-operate" value="tan" ctype="1">tan</li>
+                <li class="btn-operate" value="tanh" ctype="1">tanh</li>
+                <li class="btn-operate btn-num" style="width:120px;" value="0" ctype="-1">0</li>
+                <li class="btn-operate btn-num" value="." ctype="-1">.</li>
+                <li class="btn-operate" value="=" ctype="9">=</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
